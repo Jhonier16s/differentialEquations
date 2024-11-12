@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Método de Variación de Parámetros</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- Incluir MathJax -->
+    <script type="text/javascript" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
   </head>
   <body>
     <div id="particles-js"></div>
@@ -87,7 +91,8 @@
         <h2>Ejemplo Práctico</h2>
         <p>
           Ejercicio: Resolver la siguiente ecuación diferencial no homogénea
-          utilizando el Método de Variación de Parámetros: y'' + y = sec^2 x
+          utilizando el Método de Variación de Parámetros:
+          <span id="equation1"> $$ y^{\prime\prime} + y = \sec^2(x) $$ </span>
         </p>
 
         <iframe
@@ -114,7 +119,7 @@
             margin-bottom: 20px;
           "
         >
-          <h4 style="margin-bottom: 10px">Ejercicio 1: y'' + y = tan x</h4>
+          <h4 style="margin-bottom: 10px">Ejercicio 1: $$ y^{\prime\prime} + y = \tan(x) $$</h4>
           <p>
             Este ejercicio lo resolveremos en clase. El objetivo es aplicar el
             Método de Variación de Parámetros para resolver una ecuación con
@@ -138,7 +143,7 @@
           class="exercise"
           style="border: 2px solid #e4e4e4; border-radius: 5px; padding: 20px"
         >
-          <h4 style="margin-bottom: 10px">Ejercicio 2: y'' - y = 2 ln x</h4>
+          <h4 style="margin-bottom: 10px">Ejercicio 2: $$ y^{\prime\prime} - y = 2 \ln(x) $$</h4>
           <p>
             En este ejercicio, resolveremos una ecuación con logaritmos.
             Utilizaremos el Método de Variación de Parámetros para encontrar la
