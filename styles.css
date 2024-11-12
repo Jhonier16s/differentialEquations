@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: #e0e0e0;
+  overflow-x: hidden;
+  background-color: #1e1e1e;
+  position: relative;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem;
+  margin: 10px;
+  height: 280px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  background-clip: text;
+  color: transparent;
+  animation: fadeIn 2s ease-in;
+  margin: 1rem 0;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #ccc;
+  animation: fadeIn 2s ease-in 1s;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 1rem;
+  z-index: 10;
+}
+
+.navbar a {
+  color: #ffffff;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #00c6ff;
+}
+
+.section {
+  padding: 3rem;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s, transform 1s;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 1rem;
+}
+.footer {
+  background-color: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border-top: 2px solid #ddd;
+  margin-top: 40px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.team-info p {
+  margin: 10px 0 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.team-info ul {
+  list-style-type: none;
+  padding: 4;
+}
+
+.team-info ul li {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 5px 0;
+}
+
+#typing-effect::after {
+  content: "|";
+  animation: blink 0.7s steps(1) infinite;
+  color: #00c6ff;
+}
+
+/* Keyframes */
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: #e0e0e0;
+  overflow-x: hidden;
+  background-color: #1e1e1e;
+  position: relative;
+}
+
+.navbar {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  border: none;
+  background: transparent;
+}
+
+.menu-icon {
+  background-color: #0072ff;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.menu-icon.active {
+  background-color: #00c6ff;
+}
+
+.menu-icon .bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #fff;
+  transition: 0.3s ease;
+}
+
+.nav-links {
+  position: fixed;
+  bottom: 60px;
+  right: -320px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  list-style: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease;
+  border: none;
+  z-index: 999;
+}
+
+.nav-links.active {
+  right: 20px;
+}
+
+.nav-links li {
+  margin: 15px 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00c6ff;
+}
+
+.nav-links a.active {
+  color: #ff7e5f;
+}
+
+.menu-icon.active .bar:nth-child(1) {
+  transform: rotate(45deg);
+  transform-origin: 1px 1px;
+}
+
+.menu-icon.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.active .bar:nth-child(3) {
+  transform: rotate(-45deg);
+  transform-origin: 1px 1px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.video {
+  width: 90%;
+  height: 500px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .video {
+    width: 100%;
+    height: 200px;
+  }
+}
